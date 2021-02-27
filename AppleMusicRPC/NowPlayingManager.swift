@@ -11,7 +11,7 @@ import SwordRPC
 
 class NowPlayingManager {
     static let shared = NowPlayingManager()
-    let rpc = SwordRPC(appId: "711031191112908851", autoRegister: false)
+    let rpc = SwordRPC(appId: "815060178898518059", autoRegister: false)
     
     private init() {
         rpc.delegate = self
@@ -53,8 +53,17 @@ class NowPlayingManager {
             presence.timestamps.start = item.startDate
         }
         
-        presence.assets.largeImage = "music"
-        presence.assets.largeText = "Music app"
+        if #available(macOS 11.0, *){
+            presence.assets.largeImage = "music"}
+        else if #available(macOS 10.15, *) {
+            presence.assets.largeImage = "musicold"}
+        else {
+            presence.assets.largeImage = "itunes"}
+        
+        if #available(macOS 10.15, *){
+            presence.assets.largeText = "Music app"}
+        else {
+            presence.assets.largeText = "iTunes app"}
         
         presence.assets.smallImage = item.isPaused ? "paused" : "playing"
         presence.assets.smallText = playbackStateText
