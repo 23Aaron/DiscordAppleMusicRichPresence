@@ -2,11 +2,11 @@
 
 Show your Now Playing song from macOS's Music.app (or iTunes) in Discord.
 
-[Download Latest Release](https://github.com/aydenp/DiscordAppleMusicRichPresence/releases/latest/download/DiscordAppleMusicRichPresence.app.zip)
+[Download Latest Release](https://github.com/23aaron/DiscordAppleMusicRichPresence/releases/latest/download/DiscordAppleMusicRichPresence.app.zip)
 
-![Screenshot of Discord presence](/Assets/in-discord.png)
+![Screenshot of Discord presence](https://i.imgur.com/ldwzVOT.png)
 
-![Screenshot of system menu item](/Assets/in-menu-bar.png)
+![Screenshot of system menu item](https://i.imgur.com/GJmsX28.png)
 
 ## Reporting Issues
 
